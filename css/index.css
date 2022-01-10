@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NanumSquareR-subset.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NanumSquare";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NanumSquareB-subset.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Manrope-Regular.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/Manrope-ExtraBold.woff2);
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Infiniti Brand';
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, figure, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+* {
+  max-width: 103%;
+}
+
+.header {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.header .logo {
+  width: 40%;
+}
+
+.header .search {
+  width: 70%;
+}
+
+.header .menu-trigger, .header .menu-trigger span {
+  display: inline-block;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header .menu-trigger {
+  margin: 5px 10px;
+  position: relative;
+  width: 25px;
+  height: 30px;
+}
+
+.header .menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #414141;
+}
+
+.header .menu-trigger span:nth-of-type(1) {
+  top: 2px;
+}
+
+.header .menu-trigger span:nth-of-type(2) {
+  top: 10px;
+}
+
+.header .menu-trigger span:nth-of-type(3) {
+  bottom: 9px;
+}
+
+main {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+main .bg div a img {
+  margin: 50px 0 0 0;
+}
+
+main .bg div p {
+  border: 1px solid #000;
+  display: inline-block;
+  color: #D8EBE6;
+  font-weight: bold;
+}
+
+main .bg div h3 {
+  border: 1px solid #f00;
+  display: block;
+  font-size: 36px;
+}
+
+main .event div {
+  margin: 8px 8px;
+}
+
+main .event div a img {
+  width: 100%;
+}
+
+main .event div span {
+  display: inline-block;
+  width: 5%;
+  height: 3px;
+  margin: 20px 0 3px 5px;
+  background-color: #414141;
+}
+
+main .event div .date {
+  font-weight: bold;
+  display: inline;
+  letter-spacing: 0.5px;
+  padding: 10px 10px 10px 10px;
+}
+
+main .event div h4 {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main .event div p {
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 50px;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+
+main .X-S10 {
+  width: 97%;
+  position: relative;
+  border-top: 1px solid #ddd;
+  margin: 8px 8px;
+  margin-top: 30px;
+}
+
+main .X-S10 a img {
+  width: 13%;
+}
+
+main .X-S10 a p {
+  border: 2px solid #f00;
+  display: inline-block;
+  width: 10%;
+  margin: 0px 15px;
+}
+
+main .stories div {
+  margin: 8px 8px;
+}
+
+main .stories div a img {
+  width: 100%;
+}
+
+main .stories div h4 {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main .stories div p {
+  text-align: left;
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 50px;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+
+footer {
+  position: relative;
+}
+
+footer .customer_center {
+  background-color: #fafafa;
+}
+
+footer .customer_center span {
+  position: absolute;
+  width: 95%;
+  height: 3px;
+  margin: 10px;
+  background-color: #000;
+}
+
+footer .customer_center h3 {
+  color: #414141;
+  padding: 30px 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+footer .customer_center p {
+  width: 80%;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+footer .customer_center ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #f00;
+  width: 100%;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+footer .membership {
+  background-color: #fafafa;
+}
+
+footer .membership h3 {
+  color: #414141;
+  padding: 0 20px;
+}
+
+footer .membership p {
+  margin: 15px 20px;
+}
+
+footer .membership a {
+  border: 1px solid #f00;
+  background-color: #000;
+  color: #fff;
+  padding: 7px 15px;
+  font-size: 14px;
+  margin: 0 20px;
+}
+
+footer .info p {
+  color: #0A0A0A99;
+}
+/*# sourceMappingURL=index.css.map */
