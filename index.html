@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>후지필름</title>
     <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link href="favicon.ico" rel="shortcut icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/common.js"></script>
 </head>
+
 <body>
     <header>
         <div class="header">
@@ -18,23 +23,136 @@
             </a>
             <a href="#"><img class="logo" src="img/logo.svg"></a>
             <a href="#"><img class="search" src="img/search2.png"></a>
-        </div>        
+        </div>                
+        
+        <div class="menu">
+            <div class="header_pad">
+                <div>
+                    <img src="img/person.svg">
+                    <p><a href="#">로그인</a></p>
+                </div>
+                <div>
+                    <img src="img/shoppingbag.svg">
+                    <p><a href="#">장바구니</a></p>
+                </div>
+                <div>
+                    <img src="img/chat.svg">
+                    <p><a href="#">고객지원</a></p>
+                </div>
+            </div>
+
+            
+            <div class="list">
+                <div>    
+                    <div class="title">
+                        <h3>PRODUCT</h3>
+                    </div>
+                        <ul>
+                            <li><a href="#">신제품</a></li>
+                            <li><a href="#">프로모션</a></li>
+                            <li><a href="#">카메라</a></li>
+                            <li><a href="#">렌즈</a></li>
+                            <li><a href="#">액세서리</a></li>
+                            <li><a href="#">프로젝터</a></li>
+                        </ul>
+                </div>
+                <div>    
+                    <div class="title">
+                        <h3>PARTICLE</h3>
+                    </div>
+                        <ul>
+                            <li><a href="#">공간소개</a></li>
+                            <li><a href="#">전시</a></li>
+                            <li><a href="#">프로그램</a></li>
+                            <li><a href="#">라이브러리</a></li>
+                        </ul>
+                </div>
+                    <div class="title1">    
+                        <h3><a href="#">#PLAYWITH</a></h3>
+                        <p><a href="#">가까운 매장/서비스센터 찾기↘</a></p>
+                    </div>
+            </div> 
+
+        </div>
+
+        <div class="search_menu">
+            <a class="menu-close" href="#">
+                <span></span>
+                <span></span>
+            </a>
+            <div>
+                <input type="search" name="search" required placeholder="키워드 입력">
+                <a href="#"><img class="search" src="img/search2.png"></a>
+            </div>
+        </div> 
+        
     </header>
 
     <main>
-        <aritlce class="bg">
-            <div>
-                <a href="#"><img src="img/img_main1.jpg"></a>
-                <p>FUJIFILM GFX50S II</p>
-                <h3>가벼운 시작</h3>
-                <!-- <a href="#"><img src="img/img_main2.jpg"></a>
-                <a href="#"><img src="img/img_main3.jpg"></a>
-                <a href="#"><img src="img/img_main4.jpg"></a>
-                <a href="#"><img src="img/img_main5.jpg"></a> -->
-            </div>
-        </aritlce>
+        <article class="bg swiper">
+            <div class="slide-wrap swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <div class="img">
+                        <a href="#"><img src="img/img_main1.jpg"></a>
+                    </div>
 
-        <article class="event">
+                    <div class="txt">
+                        <p>FUJIFILM GFX50S II</p>
+                        <h3>가벼운 시작</h3>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <div class="img">
+                        <a href="#"><img src="img/img_main2.jpg"></a>
+                    </div>
+
+                    <div class="txt">
+                        <p>FUJIFILM X-T30 II</p>
+                        <h3>최첨단 기술, 클래식한 바디</h3>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <div class="img">
+                        <a href="#"><img src="img/img_main3.jpg"></a>
+                    </div>
+
+                    <div class="txt">
+                        <p>FUJIFILM X-E4</p>
+                        <h3>make MORE with LESS</h3>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <div class="img">
+                        <a href="#"><img src="img/img_main4.jpg"></a>
+                    </div>
+
+                    <div class="txt">
+                        <p>FUJIFILM GFX100S</p>
+                        <h3>모두를 위한 라지 포맷</h3>
+                    </div>
+                </div>
+
+                <div class="slide swiper-slide">
+                    <div class="img">
+                        <a href="#"><img src="img/img_main5.jpg"></a>
+                    </div>
+
+                    <div class="txt">
+                        <p>FUJIFILM X-S10</p>
+                        <h3>사진, 영상도 카메라에서 바로 완성</h3>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="swiper-pagination"></div>
+
+        </article>
+
+        <article class="event a">
             <div>
                 <a href="#"><img src="img/img_event1.jpg"></a>
                 <span></span>
@@ -44,12 +162,14 @@
             </div>
         </article>
 
-        <div class="X-S10">
+        <div class="X-S10 a">
             <a href="#"><img src="img/X-S10.jpg"></a>
-            <a href="#"><p>CAMERA X-S10</p></a>
+            <a class="text" href="#">CAMERA
+                <p>X-S10 ↘</p>
+            </a>
         </div>
 
-        <artlce class="event">
+        <artlce class="event a">
             <div>
                 <a href="#"><img src="img/img_event2.jpg"></a>
                 <span></span>
@@ -59,7 +179,7 @@
             </div>
         </artlce>
 
-        <artlce class="stories">
+        <artlce class="stories a">
             <div>
                 <a href="#"><img src="img/img_stories1.jpg"></a>
                 <h4>GFX 사진 이야기 정재란님</h4>
@@ -73,7 +193,7 @@
             </div>
         </artlce>
 
-        <artlce class="stories">
+        <artlce class="stories a">
             <div>
                 <a href="#"><img src="img/img_stories2.jpg"></a>
                 <h4>GFX50S II 3일 무료체험</h4>
@@ -84,7 +204,7 @@
             </div>
         </artlce>
 
-        <artlce class="stories">
+        <artlce class="stories a">
             <div>
                 <a href="#"><img src="img/img_stories3.jpg"></a>
                 <h4>GFX 사진 이야기 - 유지민님</h4>
@@ -97,7 +217,7 @@
             </div>
         </artlce>
 
-        <artlce class="event">
+        <artlce class="event a">
             <div>
                 <a href="#"><img src="img/img_event3.jpg"></a>
                 <span></span>
@@ -107,7 +227,7 @@
             </div>
         </artlce>
 
-        <artlce class="stories">
+        <artlce class="stories a">
             <div>
                 <a href="#"><img src="img/img_stories4.jpg"></a>
                 <h4>GFX 사진 이야기 - 박원규님</h4>
@@ -119,7 +239,7 @@
             </div>
         </artlce>
 
-        <artlce class="stories">
+        <artlce class="stories a">
             <div>
                 <a href="#"><img src="img/img_stories5.jpg"></a>
                 <h4>GFX 사진 이야기 - 정동욱님</h4>
@@ -131,7 +251,7 @@
             </div>
         </artlce>
 
-        <artlce class="stories">
+        <artlce class="stories a">
             <div>
                 <a href="#"><img src="img/img_stories6.jpg"></a>
                 <h4>GFX50S II: More than Full Frame x Roh Seunghwan</h4>
@@ -142,57 +262,59 @@
         </artlce>
 
         <article class="banner">
-            <div>
-                <p><img src="img/banner.jpg"></p>
-                <img src="img/VALUE FROM.png">
-                <img src="img/INNOVATION.png">
+            <div class="background">
+                <img src="img/img_bottom.jpg" alt="">
+                    <div class="innovation">
+                        <img src="img/slogan-1.png">
+                        <img src="img/slogan-2.png">
+                    </div>
             </div>
         </article>
     </main>
 
     <footer>
-        <div class="customer_center">
-            <span></span>
-            <h3>CUSTOMER CENTER</h3>            
-            <p>
-                후지필름 제품을 사용하시나요?
-                필요한 고객지원 서비스를 바로 찾아보세요.
-            </p>
+        <div class="foot">
+            <div class="customer_center">
+                <h3>CUSTOMER CENTER</h3>            
+                <p>
+                    후지필름 제품을 사용하시나요?
+                    필요한 고객지원 서비스를 바로 찾아보세요.
+                </p>
 
-            <ul>
-                <a href="#"><li>정품등록</li></a>
-                <a href="#"><li>A/S접수</li></a>
-                <a href="#"><li>서비스센터</li></a>
-                <a href="#"><li>모든고객지원</li></a>
-            </ul>
-        </div>
+                <ul>
+                    <a href="#"><li>정품등록 ↘</li></a>
+                    <a href="#"><li>A/S접수 ↘</li></a>
+                </ul>
+                <ul>
+                    <a href="#"><li>서비스센터 ↘</li></a>
+                    <a href="#"><li>모든고객지원 ↘</li></a>
+                </ul>
+            </div>
 
-        <div class="membership">
-            <span></span>
-            <h3>MEMBERSHIP</h3>
-            <p>
-                후지필름이 처음이신가요?
-                다양한 프로모션,제품 무료체험 등의 회원 혜택을 받아보세요.
-            </p>
+            <div class="membership">
+                <h3>MEMBERSHIP</h3>
+                <p>
+                    후지필름이 처음이신가요?
+                    다양한 프로모션,제품 무료체험 등의 회원 혜택을 받아보세요.
+                </p>
 
-            <a href="#">회원가입</a>
+                <a href="#">회원가입</a>
+            </div>
         </div>
 
         <div class="contact">
-            <span></span>
-            <h3>1577-4793</h3>
+            <h2>1577-4793</h2>
             <p>평일 09:00 - 18:00 / 토요일,일요일 및 공휴일 휴무</p>
             <ul>
-                <li><a href="#"><img src=""></a></li>
-                <li><a href="#"><img src=""></a></li>
-                <li><a href="#"><img src=""></a></li>
+                <li><a href="https://www.instagram.com/accounts/login/"><img src="img/sns-instagram.svg" alt=""></a></li>
+                <li><a href="https://www.youtube.com/c/FUJIFILMKorea_official/featured"><img src="img/sns-youtube.svg" alt=""></a></li>
+                <li><a href="https://www.facebook.com/fujifilmdigitalcamera/"><img src="img/sns-facebook.svg" alt=""></a></li>
             </ul>
-            <span></span>
         </div>
 
         <div class="info">
-            <p>© FUJIFILM ELECTRONIC IMAGING KOREA CO., LTD</p>
-            <button></button>
+            <p>© FUJIFILM ELECTRONIC IMAGING KOREA CO., LTD</p>  
+            <a href="#">▼</a>          
             <!--
             <ul>
                 <li>회사소개 |</li>
