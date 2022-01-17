@@ -342,23 +342,24 @@ main{
 
 footer{
     position:relative;
+    background-color:rgb(245, 245, 245);
     .foot{        
         width:100%;
-        background-color:rgb(245, 106, 106);
+        padding:20px;
         .customer_center{
-            width:90%;
+            width:100%;
             margin:0 auto;
+            border-top:3px solid #000;
             border-bottom:1px solid #d5d5d5;    
             h3{
-                border-top:3px solid #000;
                 color:#414141; 
-                padding:30px 20px; 
+                padding:30px 10px; 
                 font-size:16px; 
                 letter-spacing: 1px;
             }
             p{
                 width:100%;
-                padding:0 20px; 
+                padding:0 10px; 
                 font-size:18px;
                 margin-bottom:20px;
                 text-align: left;
@@ -366,7 +367,7 @@ footer{
             ul{
                 display:flex;
                 width:100%;
-                padding:0 20px; 
+                padding:0 10px; 
                 font-size:16px;
                 color:#0A0A0A;
                 margin-bottom:20px;
@@ -383,9 +384,8 @@ footer{
         }
         
         .membership{
-            border-bottom:1px solid #d5d5d5;
-            padding:40px;
-            h3{color:#414141; font-size:16px; }
+            padding:30px 10px;
+            h3{color:#414141; font-size:16px;}
             p{
                 padding:20px 0; 
                 font-size:18px; 
@@ -401,13 +401,15 @@ footer{
     }
     
     .contact{
-        padding:20px;
+        border-top:1px solid #d5d5d5;
         border-bottom:1px solid #d5d5d5;
+        background-color: #fff;
+        padding:17px 15px;
         h2{font-size:28px; }
         p{padding:3px; font-size:14px;}
         ul{
             display: flex;  
-            padding:20px 0;           
+            padding:20px 30px;     
             li{
                 a{
                     img{width:30%;}
@@ -417,6 +419,7 @@ footer{
     }
 
     .info{
+        background-color: #fff;
         display:flex;
         padding:17px;
         p{

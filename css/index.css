@@ -513,30 +513,31 @@ main .banner .background .innovation img {
 
 footer {
   position: relative;
+  background-color: whitesmoke;
 }
 
 footer .foot {
   width: 100%;
-  background-color: #f56a6a;
+  padding: 20px;
 }
 
 footer .foot .customer_center {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  border-top: 3px solid #000;
   border-bottom: 1px solid #d5d5d5;
 }
 
 footer .foot .customer_center h3 {
-  border-top: 3px solid #000;
   color: #414141;
-  padding: 30px 20px;
+  padding: 30px 10px;
   font-size: 16px;
   letter-spacing: 1px;
 }
 
 footer .foot .customer_center p {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 10px;
   font-size: 18px;
   margin-bottom: 20px;
   text-align: left;
@@ -547,7 +548,7 @@ footer .foot .customer_center ul {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 10px;
   font-size: 16px;
   color: #0A0A0A;
   margin-bottom: 20px;
@@ -559,8 +560,7 @@ footer .foot .customer_center ul a {
 }
 
 footer .foot .membership {
-  border-bottom: 1px solid #d5d5d5;
-  padding: 40px;
+  padding: 30px 10px;
 }
 
 footer .foot .membership h3 {
@@ -582,8 +582,10 @@ footer .foot .membership a {
 }
 
 footer .contact {
-  padding: 20px;
+  border-top: 1px solid #d5d5d5;
   border-bottom: 1px solid #d5d5d5;
+  background-color: #fff;
+  padding: 17px 15px;
 }
 
 footer .contact h2 {
@@ -599,7 +601,7 @@ footer .contact ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 0;
+  padding: 20px 30px;
 }
 
 footer .contact ul li a img {
@@ -607,6 +609,7 @@ footer .contact ul li a img {
 }
 
 footer .info {
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
