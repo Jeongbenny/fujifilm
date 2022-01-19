@@ -67,6 +67,7 @@ header .header {
   position: fixed;
   margin: 0 auto;
   padding: 4px 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,8 +125,8 @@ header .header .menu-trigger span:nth-of-type(3) {
 
 header .header .menu-trigger.active span:nth-of-type(1) {
   top: 50%;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 header .header .menu-trigger.active span:nth-of-type(2) {
@@ -135,8 +136,8 @@ header .header .menu-trigger.active span:nth-of-type(2) {
 
 header .header .menu-trigger.active span:nth-of-type(3) {
   top: 50%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 header .menu {
@@ -228,11 +229,21 @@ header .menu .list .title1 h3 a {
   font-size: 22px;
 }
 
-header .menu .list .title1 p {
-  font-size: 14px;
+header .menu .list .title1 div {
+  width: 100%;
+  position: absolute;
+  bottom: 7.5%;
+  border-top: 1px solid #d5d5d5;
+  left: 0%;
 }
 
-header .menu .list .title1 p a {
+header .menu .list .title1 div p {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 20px 0 0 20px;
+}
+
+header .menu .list .title1 div p a {
   color: #000;
 }
 
@@ -246,24 +257,39 @@ header .search_menu {
   background-color: #fff;
   width: 100%;
   height: 100vh;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+header .search_menu .menu_close {
   display: none;
+  float: right;
+  position: relative;
+  width: 24px;
+  height: 20px;
 }
 
-header .search_menu .menu-close {
+header .search_menu .menu_close span {
   position: absolute;
-  right: 3%;
+  left: -20px;
+  top: 20px;
+  height: 25px;
   border: 1px solid #000;
-  height: 30px;
 }
 
-header .search_menu .menu-close span:nth-of-type(1) {
-  border: 1px solid #000;
+header .search_menu .menu_close.active {
+  display: block;
+}
+
+header .search_menu .menu_close span:nth-child(1) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-header .search_menu .menu-close span:nth-of-type(2) {
-  border: 1px solid #000;
+header .search_menu .menu_close span:nth-child(2) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -296,7 +322,9 @@ header .search_menu div a img {
 }
 
 header .search_menu.active {
-  display: block;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 main {

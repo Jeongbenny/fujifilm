@@ -28,8 +28,15 @@ $(window).on('scroll',function(){
 });
 
 let num3=0;
-$('.header .search').on('click',function(){
-    $('.search_menu').slideDown('active');
+//open
+$('.header .search').on('click',function(){    
+    $('header .search_menu').addClass('active');
+    $('header .menu_close').addClass('active');
+});
+//close
+$('header .menu_close').on('click',function(){
+    $('header .search_menu').removeClass('active');
+    $('header .menu_close').removeClass('active');
 });
 
 let num4=0;
